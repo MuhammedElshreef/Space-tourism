@@ -6,7 +6,7 @@ import homePage from './components/HomePage.vue'
 import technologyPage from './components/TechnologyPage.vue'
 import crewPage from './components/CrewPage.vue'
 import destinationPage from './components/DestinationPage.vue'
-const activeTap = ref('technologyPage')
+const activeTap = ref('homePage')
 const tabs = {
   homePage,
   destinationPage,
