@@ -7,7 +7,7 @@ const toggleFirstBtnActive = () => {
   isFirstBtnActive.value = !isFirstBtnActive.value
 }
 
-const firstButtonClass = ref('bg-white text-black')
+const firstButtonClass = ref('text-black bg-white')
 watch(isFirstBtnActive, () => {
   if (isFirstBtnActive.value === true) {
     firstButtonClass.value = 'bg-white text-black'
@@ -24,7 +24,7 @@ const toggleSecondBtnActive = () => {
   isSecondBtnActive.value = !isSecondBtnActive.value
 }
 
-const secondButtonClass = ref('')
+const secondButtonClass = ref('text-white')
 
 watch(isSecondBtnActive, () => {
   if (isSecondBtnActive.value === true) {
@@ -36,13 +36,13 @@ watch(isSecondBtnActive, () => {
   }
 })
 // <===============================================>
-const isThirdBtnActive = ref()
+const isThirdBtnActive = ref('')
 
 const toggleThirdBtnActive = () => {
   isThirdBtnActive.value = !isThirdBtnActive.value
 }
 
-const thirdButtonClass = ref('')
+const thirdButtonClass = ref('text-white')
 
 watch(isThirdBtnActive, () => {
   if (isThirdBtnActive.value === true) {

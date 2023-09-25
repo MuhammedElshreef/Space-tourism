@@ -52,7 +52,9 @@ const toggleMenu = () => {
         </ul>
       </div>
       <img src="../assets/group-2.svg" class="w-10 h-10" alt="" />
-      <label class="btn btn-circle swap swap-rotate bg-transparent border-none z-30 text-primary">
+      <label
+        class="btn btn-circle swap swap-rotate bg-transparent border-none z-30 text-primary pb-2"
+      >
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" @change="toggleMenu" />
 
