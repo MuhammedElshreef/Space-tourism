@@ -14,7 +14,7 @@ watch(isFirstBtnActive, () => {
     isSecondBtnActive.value = false
     isThirdBtnActive.value = false
   } else {
-    firstButtonClass.value = ''
+    firstButtonClass.value = 'text-white'
   }
 })
 // <===============================================>
@@ -32,7 +32,7 @@ watch(isSecondBtnActive, () => {
     isFirstBtnActive.value = false
     isThirdBtnActive.value = false
   } else {
-    secondButtonClass.value = ''
+    secondButtonClass.value = 'text-white'
   }
 })
 // <===============================================>
@@ -50,7 +50,7 @@ watch(isThirdBtnActive, () => {
     isFirstBtnActive.value = false
     isSecondBtnActive.value = false
   } else {
-    thirdButtonClass.value = ''
+    thirdButtonClass.value = 'text-white'
   }
 })
 // <===============================================>
