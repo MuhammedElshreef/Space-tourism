@@ -26,7 +26,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
         :spaceBetween="30"
         :navigation="false"
         :autoplay="{
-          delay: 400000,
+          delay: 4000,
           disableOnInteraction: false
         }"
         :pagination="{
@@ -36,7 +36,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
         <swiper-slide
           ><div class="flex lg:flex-row flex-col">
             <div
-              class="flex flex-col lg:items-start items-center lg:pt-36 pt-12 lg:gap-6 gap-2 lg:order-1 order-2"
+              class="flex flex-col lg:items-start items-center lg:pt-36 pt-12 lg:gap-6 gap-2 lg:order-1 order-2 pr-4 lg:pr-0"
             >
               <span class="font-ballefair lg:text-3xl text-secondary">COMMANDER</span>
               <span class="lg:text-4xl text-2xl text-primary font-ballefair uppercase"
@@ -59,7 +59,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
         <swiper-slide
           ><div class="flex lg:flex-row flex-col">
             <div
-              class="flex flex-col lg:items-start items-center lg:pt-36 pt-8 lg:gap-6 gap-2 lg:order-1 order-2"
+              class="flex flex-col lg:items-start items-center lg:pt-36 pt-8 lg:gap-6 gap-2 lg:order-1 order-2 pr-4 lg:pr-0"
             >
               <span class="font-ballefair lg:text-3xl text-secondary">Mission Specialist </span>
               <span class="lg:text-4xl text-2xl text-primary font-ballefair uppercase"
@@ -74,7 +74,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
             <div class="lg:order-2 order-1 flex justify-center pt-8">
               <img
                 src="../assets/images/crew/image-mark-shuttleworth.png"
-                class="lg:w-[600px] w-56 h-[280px] object-contain"
+                class="lg:w-full w-56 lg:h-full h-[280px] pr-6"
                 alt=""
               />
             </div></div
@@ -83,7 +83,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
         <swiper-slide
           ><div class="flex lg:flex-row flex-col pt-6">
             <div
-              class="flex flex-col lg:items-start items-center lg:pt-36 pt-14 lg:gap-6 gap-2 lg:order-1 order-2"
+              class="flex flex-col lg:items-start items-center lg:pt-36 pt-14 lg:gap-6 gap-2 lg:order-1 order-2 pr-4 lg:pr-0"
             >
               <span class="font-ballefair lg:text-3xl text-secondary">PILOT</span>
               <span class="lg:text-4xl text-2xl text-primary font-ballefair uppercase"
@@ -106,7 +106,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
         <swiper-slide
           ><div class="flex lg:flex-row flex-col lg:pt-0 pt-16">
             <div
-              class="flex flex-col lg:items-start items-center lg:pt-36 pt-12 lg:gap-6 gap-2 lg:order-1 order-2"
+              class="flex flex-col lg:items-start items-center lg:pt-36 pt-12 lg:gap-6 gap-2 lg:order-1 order-2 pr-4 lg:pr-0"
             >
               <span class="font-ballefair lg:text-3xl text-secondary uppercase"
                 >Flight Engineer</span
@@ -134,7 +134,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 </template>
 <style>
 .swiper-pagination {
-  @apply flex lg:pb-20 lg:translate-y-0 justify-center lg:justify-start -translate-y-[270px];
+  @apply flex lg:pb-20 lg:translate-y-0 justify-center lg:justify-start -translate-y-[270px] pr-4 lg:pr-0;
 }
 .swiper-pagination-bullet {
   width: 15px;
