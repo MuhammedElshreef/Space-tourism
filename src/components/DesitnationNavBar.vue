@@ -1,4 +1,4 @@
-<script></script>
+<script setup></script>
 <template>
   <div>
     <div class="flex lg:gap-8 font-barlow-condensed text-primary text-lg">

@@ -1,4 +1,5 @@
 <script setup lan="js">
+import NavBar from '../components/NavBar.vue'
 import { ref, watch } from 'vue'
 
 const isFirstBtnActive = ref(true)
@@ -57,11 +58,12 @@ watch(isThirdBtnActive, () => {
 </script>
 <template>
   <div
+    v-motion-fade
     class="bg-[url(../assets/images/technology/background-technology-desktop.jpg)] bg-no-repeat bg-cover flex flex-col justify-end"
   >
-    <slot name="navBar"></slot>
+    <NavBar class="px-12" />
     <div class="container min-h-screen">
-      <div class="flex gap-4 pb-12 lg:justify-start justify-center">
+      <div class="flex gap-4 pb-12 lg:justify-start justify-center pt-12">
         <span class="text-primary/25 text-3xl font-bold">03</span>
         <h2 class="text-secondary font-barlow-condensed text-3xl font-normal">SPACE LAUNCH 101</h2>
       </div>
@@ -105,13 +107,13 @@ watch(isThirdBtnActive, () => {
           </div>
           <img
             src="../assets/images/technology/image-launch-vehicle-portrait.jpg"
-            class="lg:-translate-y-24 lg:translate-x-[125px] hidden lg:block lg:order-2 order-1"
-            alt=""
+            class="lg:-translate-y-24 lg:translate-x-14 hidden lg:block lg:order-2 order-1"
+            alt="launch vehicle image"
           />
           <img
             src="../assets/images/technology/image-launch-vehicle-landscape.jpg"
-            class="lg:-translate-y-24 lg:translate-x-[125px] lg:order-2 order-1 lg:hidden block pb-6"
-            alt=""
+            class="order-1 lg:hidden block pb-6"
+            alt="launch vehicle image"
           />
         </div>
 
@@ -129,13 +131,13 @@ watch(isThirdBtnActive, () => {
           </div>
           <img
             src="../assets/images/technology/image-spaceport-portrait.jpg"
-            class="lg:-translate-y-24 lg:translate-x-[125px] hidden lg:block lg:order-2 order-1"
-            alt=""
+            class="lg:-translate-y-24 lg:translate-x-14 hidden lg:block lg:order-2 order-1"
+            alt=" spaceport portrait image"
           />
           <img
             src="../assets/images/technology/image-spaceport-landscape.jpg"
-            class="lg:-translate-y-24 lg:translate-x-[125px] lg:order-2 order-1 lg:hidden block pb-6"
-            alt=""
+            class="lg:hidden block pb-6"
+            alt="spaceport landscape image"
           />
         </div>
         <div class="flex lg:flex-row flex-col lg:order-2" v-show="isThirdBtnActive">
@@ -152,13 +154,13 @@ watch(isThirdBtnActive, () => {
           </div>
           <img
             src="../assets/images/technology/image-space-capsule-portrait.jpg"
-            class="lg:-translate-y-24 lg:translate-x-[125px] hidden lg:block lg:order-2 order-1"
-            alt=""
+            class="lg:-translate-y-24 lg:translate-x-14 hidden lg:block lg:order-2 order-1"
+            alt="space capsule image"
           />
           <img
             src="../assets/images/technology/image-space-capsule-landscape.jpg"
-            class="lg:-translate-y-24 lg:translate-x-[125px] lg:order-2 order-1 lg:hidden block pb-6"
-            alt=""
+            class="lg:hidden block pb-6"
+            alt="space capsule image"
           />
         </div>
       </div>

@@ -1,4 +1,6 @@
 <script setup lan="js">
+import NavBar from '../components/NavBar.vue'
+
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
 // Import Swiper styles
@@ -13,9 +15,10 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 </script>
 <template>
   <div
+    v-motion-fade
     class="bg-[url(../assets/images/crew/background-crew-desktop.jpg)] bg-no-repeat bg-cover flex flex-col justify-end"
   >
-    <slot name="navBar"></slot>
+    <NavBar class="px-12" />
     <div class="container min-h-screen">
       <div class="flex lg:justify-start justify-center gap-4 pb-12 lg:text-3xl text-xl">
         <span class="text-primary/25 font-bold">02</span>
@@ -99,7 +102,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
               <img
                 src="../assets/images/crew/image-victor-glover.png"
                 class="lg:w-[600px] w-56"
-                alt=""
+                alt="victor image"
               />
             </div></div
         ></swiper-slide>
@@ -124,7 +127,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
               <img
                 src="../assets/images/crew/image-anousheh-ansari.png"
                 class="lg:w-[600px] w-56"
-                alt=""
+                alt="anoushes image"
               />
             </div></div
         ></swiper-slide>
